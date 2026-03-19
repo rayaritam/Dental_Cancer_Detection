@@ -179,7 +179,7 @@ CLASS_DESCRIPTIONS = {
 # =========================
 st.sidebar.header("⚙️ Model Settings")
 
-default_ckpt = "cilmp_dental_v3.pt"
+ckpt_path = "cilmp_dental_v3.pt"
 #ckpt_path = st.sidebar.text_input("Checkpoint path", value=default_ckpt)
 
 show_gradcam = st.sidebar.checkbox("Enable Grad-CAM", value=True)
