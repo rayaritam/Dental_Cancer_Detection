@@ -53,7 +53,7 @@ st.markdown("""
 
 st.markdown('<div class="main-title">🦷 OralSense — Dental Lesion AI</div>', unsafe_allow_html=True)
 st.markdown(
-    '<div class="sub-text">AI-assisted oral lesion classification with visual explanation using your final CILMP-based model.</div>',
+    '<div class="sub-text">AI-assisted oral lesion classification with visual explanation using our final model.</div>',
     unsafe_allow_html=True
 )
 st.markdown("---")
@@ -180,7 +180,7 @@ CLASS_DESCRIPTIONS = {
 st.sidebar.header("⚙️ Model Settings")
 
 default_ckpt = "cilmp_dental_v3.pt"
-ckpt_path = st.sidebar.text_input("Checkpoint path", value=default_ckpt)
+#ckpt_path = st.sidebar.text_input("Checkpoint path", value=default_ckpt)
 
 show_gradcam = st.sidebar.checkbox("Enable Grad-CAM", value=True)
 topk = st.sidebar.slider("Top-K predictions", min_value=2, max_value=5, value=3)
